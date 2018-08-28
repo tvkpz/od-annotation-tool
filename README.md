@@ -5,7 +5,7 @@
 ## Instructions to use the Dockerfile:
 
 * In `terminal` navigate to this directory.
-* Copy all images that need to be annotated into the test_images folder
+* Copy all images that need to be annotated into the `test_images` folder
 * Run `$bash ./create_labelme.sh` to create the list of images
 * Run `$bash ./build_labelme_image.sh` to build the labelme image.
 * Run `$bash ./start_labelme_container.sh` to start the container.
