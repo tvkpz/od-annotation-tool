@@ -27,7 +27,7 @@ COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY apache2.conf /etc/apache2/apache2.conf
 
 #Clone LabelMe,move it and make
-RUN git clone https://github.com/CSAILVision/LabelMeAnnotationTool.git
+RUN git clone https://github.com/tvkpz/LabelMeAnnotationTool.git
 ADD Images ./LabelMeAnnotationTool/Images/example_folder/
 COPY labelme.txt ./LabelMeAnnotationTool/annotationCache/DirLists/
 RUN mv ./LabelMeAnnotationTool/ /var/www/html/LabelMeAnnotationTool/
