@@ -28,7 +28,7 @@ COPY apache2.conf /etc/apache2/apache2.conf
 
 #Clone LabelMe,move it and make
 RUN git clone https://github.com/CSAILVision/LabelMeAnnotationTool.git
-ADD test_images ./LabelMeAnnotationTool/Images/example_folder/
+ADD Images ./LabelMeAnnotationTool/Images/example_folder/
 COPY labelme.txt ./LabelMeAnnotationTool/annotationCache/DirLists/
 RUN mv ./LabelMeAnnotationTool/ /var/www/html/LabelMeAnnotationTool/
 RUN cd /var/www/html/LabelMeAnnotationTool/ && make

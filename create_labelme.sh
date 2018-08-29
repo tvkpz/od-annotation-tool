@@ -1,4 +1,4 @@
-DIRECTORY=test_images
+DIRECTORY=Images
 
 for i in $DIRECTORY/*.jpg; do
     IFS='/' read -r -a array <<< "$i"
